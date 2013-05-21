@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="museapi" location="0,0" size="0,0">
+    <action name="failResult" location="0,0" size="0,0" />
+    <action name="set_TermHeartBeat" location="0,0" size="0,0" />
+    <action name="get_PlayListId" location="0,0" size="0,0" />
+    <action name="get_PlayListInfo" location="0,0" size="0,0" />
+    <action name="set_OnlineTermPlayListMusicInfo" location="0,0" size="0,0" />
+    <action name="set_ProgressTermPlayListMusicInfo" location="0,0" size="0,0" />
+    <action name="set_StateTermPlayList" location="0,0" size="0,0" />
+  </package>
+  <webResource name="list_muse_custom_mg.jsp" path="/backstage/musecustommg/list_muse_custom_mg.jsp" location="57,1955" size="150,55" />
+  <webResource name="list_muse_repair_mg.jsp" path="/backstage/musecustommg/list_muse_repair_mg.jsp" location="60,1780" size="150,55" />
+  <webResource name="add_muse_repair_mg.jsp" path="/backstage/musecustommg/add_muse_repair_mg.jsp" location="57,1605" size="150,55" />
+  <webResource name="update_muse_repair_mg.jsp" path="/backstage/musecustommg/update_muse_repair_mg.jsp" location="13,1430" size="150,55" />
+  <webResource name="add_muse_custom_mg.jsp" path="/backstage/musecustommg/add_muse_custom_mg.jsp" location="53,1220" size="150,55" />
+  <webResource name="add_muse_store_mg.jsp" path="/backstage/musecustommg/add_muse_store_mg.jsp" location="59,1045" size="150,55" />
+  <webResource name="add_muse_term_mg.jsp" path="/backstage/musecustommg/add_muse_term_mg.jsp" location="61,835" size="150,55" />
+  <webResource name="update_muse_custom_mg.jsp" path="/backstage/musecustommg/update_muse_custom_mg.jsp" location="9,660" size="150,55" />
+  <webResource name="update_muse_store_mg.jsp" path="/backstage/musecustommg/update_muse_store_mg.jsp" location="50,485" size="150,55" />
+  <webResource name="update_muse_term_mg.jsp" path="/backstage/musecustommg/update_muse_term_mg.jsp" location="52,275" size="150,55" />
+  <webResource name="index_main.jsp" path="/index_main.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

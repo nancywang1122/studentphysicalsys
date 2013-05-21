@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="sysrightmg" namespace="/sysrightmg"
+		extends="struts-default,json-default">
+		<interceptors>
+			<interceptor name="sessionIterceptor" class="sessionIterceptor" />
+			<interceptor-stack name="sessionInterceptorStack">
+				<interceptor-ref name="sessionIterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="sessionInterceptorStack" />
+		<global-results>
+			<result name="logout" type="redirect">/index.jsp</result>
+		</global-results>
+
+		<action name="loadSysRoleMenuBeans" class="sysRoleMenuMgAction"
+			method="loadSysRoleMenuBeans">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/backstage/sysrightinfomg/list_sys_role_menu_mg.jsp
+			</result>
+		</action>
+		<action name="listSysRoleBeans" class="sysRoleMenuMgAction"
+			method="listSysRoleBeans">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		</action>
+		<action name="listSysMenuBeans" class="sysRoleMenuMgAction"
+			method="listSysMenuBeans">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		</action>
+		<action name="listSysDepartBeans" class="sysRoleMenuMgAction"
+			method="listSysDepartBeans">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		</action>
+		<action name="updateSysDepartBean" class="sysRoleMenuMgAction"
+			method="updateSysDepartBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+		<action name="saveSysRoleMenuBean" class="sysRoleMenuMgAction"
+			method="saveSysRoleMenuBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+		<action name="addSysDepartBean" class="sysRoleMenuMgAction"
+			method="addSysDepartBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+		<action name="deleteSysDepartBean" class="sysRoleMenuMgAction"
+			method="deleteSysDepartBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+		<action name="deleteSysRoleBean" class="sysRoleMenuMgAction"
+			method="deleteSysRoleBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+		<action name="addSysRoleBean" class="sysRoleMenuMgAction"
+			method="addSysRoleBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+		<action name="updateSysRoleBean" class="sysRoleMenuMgAction"
+			method="updateSysRoleBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObject</param>
+			</result>
+		</action>
+	</package>
+</struts>

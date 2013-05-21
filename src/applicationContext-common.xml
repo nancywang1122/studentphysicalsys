@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
+           http://www.directwebremoting.org/schema/spring-dwr  http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd">
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl"
+			value="jdbc:mysql://localhost:3306/stuphysical?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="user" value="root" />
+		<property name="password" value="root" />
+		<!-- 初始化时的连接数 default:3 -->
+		<property name="initialPoolSize" value="50" />
+		<!-- 连接池中保留的最小的连接数 -->
+		<property name="minPoolSize" value="15" />
+		<!-- 连接池中保留的最大的连接数 default:15 -->
+		<property name="maxPoolSize" value="150" />
+		<!-- 连接的最大空闲时间 XX s 后关闭 0:永不丢弃, default:0 -->
+		<property name="maxIdleTime" value="5" />
+		<!-- 连接池中连接耗尽时,c3p0一次同事获取的连接数. default:3 -->
+		<property name="acquireIncrement" value="3" />
+		<!-- c3p0是异步操作的，缓慢的JDBC操作通过帮助进程完成。扩展这些操作可以有效的提升性能通过多线程实现多个操作同时被执行。 Default:3 -->
+		<property name="numHelperThreads" value="3"></property>
+		<!-- 每60秒检查所有连接池中的闲连接. default:0 -->
+		<property name="idleConnectionTestPeriod" value="3" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect </prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<!-- =============框架DOMAIN============= -->
+				<value>com/joysw/bean/sysdepartbean/SysDepartmentBean.hbm.xml
+				</value>
+				<value>com/joysw/bean/sysdepartbean/SysDepartUserBean.hbm.xml
+				</value>
+				<value>com/joysw/bean/sysmenubean/SysMenuBean.hbm.xml</value>
+				<value>com/joysw/bean/sysrolebean/SysRoleBean.hbm.xml</value>
+				<value>com/joysw/bean/sysrolebean/SysRoleMenuBean.hbm.xml</value>
+				<value>com/joysw/bean/sysuserbean/SysUserBean.hbm.xml</value>
+				<value>com/joysw/bean/sysuserbean/ViewSysUserBean.hbm.xml</value>
+				<value>com/joysw/bean/sysuserbean/SysRoleUserBean.hbm.xml</value>
+				<!-- 学生信息 -->
+				<value>com/joysw/bean/studentbean/StudentBean.hbm.xml</value>
+				<value>com/joysw/bean/ordertimebean/OrdertimeBean.hbm.xml</value>
+				<value>com/joysw/bean/sportsconsultbean/SportsConsultBean.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 事务管理器 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	
+
+
+	<!-- =============事务advice=================================== -->
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="*" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="methods-managerSysFrame"
+			expression="execution(* com.joysw.service.*.impl.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="methods-managerSysFrame" />
+	</aop:config>
+</beans>

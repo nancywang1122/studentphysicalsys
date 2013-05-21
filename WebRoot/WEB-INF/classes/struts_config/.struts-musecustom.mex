@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="musecustom" location="0,0" size="0,0">
+    <action name="loadMuseCustoms" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_custom_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseDailyBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_daily_mg.jsp" />
+      </result>
+    </action>
+    <action name="toAddMuseDailyBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_daily_mg.jsp" />
+      </result>
+    </action>
+    <action name="toUpdateMuseDailyBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_daily_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMuseCustoms" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="checkTermMac" location="0,0" size="0,0" />
+    <action name="listMuseStores" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listUnBindMuseStoresBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMuseDailyBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMuseDailyBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseDailyBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseDailyBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listUnBindMuseStoresBean2" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseTerm" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseTermBeanView" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseTermHistoryBeanView" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="loadMuseTermHistoryBeanView" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_history_view_mg.jsp" />
+      </result>
+    </action>
+    <action name="selectListMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="selectListMuseTermBean2" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="loadMuseTermBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseTermBeanView" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_view_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseRepairBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_repair_mg.jsp" />
+      </result>
+    </action>
+    <action name="toAddMuseRepairBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_repair_mg.jsp" />
+      </result>
+    </action>
+    <action name="toUpdateMuseRepairBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_repair_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMuseRepairBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toAddMuseCustomBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_custom_mg.jsp" />
+      </result>
+    </action>
+    <action name="addMuseRepairBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="loadMuseArea" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="loadMuseCopyRight" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMuseCustomBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toAddMuseStoreBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_store_mg.jsp" />
+      </result>
+    </action>
+    <action name="toSelectMuseStoreBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_store_mg.jsp" />
+      </result>
+    </action>
+    <action name="addMuseStoreBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="selectMuseStoreBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toAddMuseTermBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="toSelectMuseTermBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="selectMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toUpdateMuseCustomBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_custom_mg.jsp" />
+      </result>
+    </action>
+    <action name="updateMuseCustomBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toUpdateMuseStoreBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_store_mg.jsp" />
+      </result>
+    </action>
+    <action name="updateMuseStoreBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toUpdateMuseTermBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="updateMuseRepairBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseCustomBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseRepairBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseStoreBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseStoreBean2" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteSelectMuseTermBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="index_main.jsp" path="/index_main.jsp" location="9,135" size="150,55" />
+  <webResource name="list_sys_module_mg.jsp" path="/backstage/sysmoduleinfomg/list_sys_module_mg.jsp" location="1229,415" size="150,55" />
+  <webResource name="list_muse_custom_mg.jsp" path="/backstage/musecustommg/list_muse_custom_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_custom_mg.jsp" path="/backstage/musecustommg/add_muse_custom_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_store_mg.jsp" path="/backstage/musecustommg/add_muse_store_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_term_mg.jsp" path="/backstage/musecustommg/add_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_custom_mg.jsp" path="/backstage/musecustommg/update_muse_custom_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_store_mg.jsp" path="/backstage/musecustommg/update_muse_store_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_term_mg.jsp" path="/backstage/musecustommg/update_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_repair_mg.jsp" path="/backstage/musecustommg/list_muse_repair_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_repair_mg.jsp" path="/backstage/musecustommg/add_muse_repair_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_repair_mg.jsp" path="/backstage/musecustommg/update_muse_repair_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_term_mg.jsp" path="/backstage/musetermmg/list_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_term_mg.jsp" path="/backstage/musetermmg/add_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_term_mg.jsp" path="/backstage/musetermmg/update_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_term_mg.jsp" path="/backstage/musecustommg/list_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_store_mg.jsp" path="/backstage/musecustommg/list_muse_store_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_term_view_mg.jsp" path="/backstage/musetermmg/list_muse_term_view_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_daily_mg.jsp" path="/backstage/musecustommg/list_muse_daily_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_daily_mg.jsp" path="/backstage/musecustommg/add_muse_daily_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_daily_mg.jsp" path="/backstage/musecustommg/update_muse_daily_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_term_history_view_mg.jsp" path="/backstage/musetermmg/list_muse_term_history_view_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

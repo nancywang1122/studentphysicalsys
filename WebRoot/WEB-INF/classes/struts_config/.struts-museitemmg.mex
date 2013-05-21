@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="museitem" location="0,0" size="0,0">
+    <action name="loadMuseItemBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_item_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="search_muse_item_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMusicMp3" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="jplayer_mp3.jsp" />
+      </result>
+    </action>
+    <action name="listMuseItemBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMuseItemMusicBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="resetMuseItemMusicBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseMusicBeansRelated" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_music_tmp_mg.jsp" path="/backstage/musemusicmg/list_muse_music_tmp_mg.jsp" location="2043,450" size="150,55" />
+  <webResource name="jplayer.mp3.jsp" path="/jplayer/jplayer.mp3.jsp" location="2064,625" size="150,55" />
+  <webResource name="upload_muse_music_mg.jsp" path="/backstage/musemusicmg/upload_muse_music_mg.jsp" location="2044,800" size="150,55" />
+  <webResource name="upload_muse_music_my_mg.jsp" path="/backstage/musemusicmg/upload_muse_music_my_mg.jsp" location="2068,975" size="150,55" />
+  <webResource name="update_muse_music_tmp_mg.jsp" path="/backstage/musemusicmg/update_muse_music_tmp_mg.jsp" location="2065,1150" size="150,55" />
+  <webResource name="update_muse_music_official_mg.jsp" path="/backstage/musemusicmg/update_muse_music_official_mg.jsp" location="2058,1325" size="150,55" />
+  <webResource name="update_muse_music_my_mg.jsp" path="/backstage/musemusicmg/update_muse_music_my_mg.jsp" location="2068,1500" size="150,55" />
+  <webResource name="update_muse_music_myupload_mg.jsp" path="/backstage/musemusicmg/update_muse_music_myupload_mg.jsp" location="2048,1675" size="150,55" />
+  <webResource name="list_muse_music_official_mg.jsp" path="/backstage/musemusicmg/list_muse_music_official_mg.jsp" location="2070,1850" size="150,55" />
+  <webResource name="list_muse_music_my_mg.jsp" path="/backstage/musemusicmg/list_muse_music_my_mg.jsp" location="2046,2025" size="150,55" />
+  <webResource name="list_muse_term_mg.jsp" path="/backstage/museplaylistmg/list_muse_term_mg.jsp" location="2056,2340" size="150,55" />
+  <webResource name="list_muse_muse_mg.jsp" path="/backstage/museplaylistmg/list_muse_muse_mg.jsp" location="2054,2550" size="150,55" />
+  <webResource name="list_muse_item_mg.jsp" path="/backstage/museitemmg/list_muse_item_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="search_muse_item_mg.jsp" path="/backstage/museitemmg/search_muse_item_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="demo-01-supplied-mp3-bm.htm" path="/backstage/jplayer/demo-01-supplied-mp3-bm.htm" location="0,0" size="0,0" />
+  <webResource name="demo-01-supplied-mp3-bm.jsp" path="/jplayer/demo-01-supplied-mp3-bm.jsp" location="0,0" size="0,0" />
+  <webResource name="demo-01-supplied-mp3-bm.htm" path="/jplayer/demo-01-supplied-mp3-bm.htm" location="0,0" size="0,0" />
+  <webResource name="jplayer_mp3.jsp" path="/jplayer/jplayer_mp3.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

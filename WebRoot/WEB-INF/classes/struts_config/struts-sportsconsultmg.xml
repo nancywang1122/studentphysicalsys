@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="sportsconsult" namespace="/" extends="struts-default,json-default">
+	
+	<interceptors>
+			<interceptor name="sessionIterceptor" class="sessionIterceptor" />
+			
+			<interceptor-stack name="sessionInterceptorStack">
+				<interceptor-ref name="sessionIterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<action name="displaySportsConsult" class="sportsConsultAction" method="listSportConsultBeans">
+			<result name="success">/frontstage/sportsconsultmg/display_sports_consult.jsp</result>
+		</action>
+		
+		 
+		<action name="toAddSportsConsultBean" class="sportsConsultAction" method="toAddSportsConsultBean">
+		
+		   	<interceptor-ref name="sessionIterceptor" />
+			<result name="logout" type="redirect">/frontstage/login.jsp</result>
+		
+		   	<result name="input">/frontstage/sportsconsultmg/add_sports_consult.jsp</result>
+			
+		</action>
+		
+		<action name="addSportsConsultBean" class="sportsConsultAction" method="addSportsConsultBean">
+		
+		   	<result name="input" type="redirect">/frontstage/login.jsp</result>
+		   <result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		
+		</action>
+		
+	</package>
+</struts>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="musecustom" location="434,10" size="1155,2660">
+    <action name="loadMuseCustoms" location="555,2367" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_custom_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMuseCustoms" location="555,2472" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="listMuseStores" location="310,2472" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="listMuseTerm" location="65,2472" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="listMuseTermBean" location="65,2577" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="selectListMuseTermBean" location="695,2577" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="loadMuseTermBean" location="695,2192" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseRepairBean" location="695,2017" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_repair_mg.jsp" />
+      </result>
+    </action>
+    <action name="toAddMuseRepairBean" location="695,1842" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_repair_mg.jsp" />
+      </result>
+    </action>
+    <action name="toUpdateMuseRepairBean" location="695,1667" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_repair_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMuseRepairBean" location="940,1667" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="toAddMuseCustomBean" location="940,1492" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_custom_mg.jsp" />
+      </result>
+    </action>
+    <action name="addMuseRepairBean" location="940,1212" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="loadMuseArea" location="695,1212" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="addMuseCustomBean" location="695,1317" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="toAddMuseStoreBean" location="65,1317" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_store_mg.jsp" />
+      </result>
+    </action>
+    <action name="addMuseStoreBean" location="65,1212" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="toAddMuseTermBean" location="65,1107" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="toSelectMuseTermBean" location="65,932" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="selectMuseTermBean" location="310,932" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="addMuseTermBean" location="555,932" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="toUpdateMuseCustomBean" location="555,757" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_custom_mg.jsp" />
+      </result>
+    </action>
+    <action name="updateMuseCustomBean" location="800,757" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="toUpdateMuseStoreBean" location="800,582" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_store_mg.jsp" />
+      </result>
+    </action>
+    <action name="updateMuseStoreBean" location="800,477" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="toUpdateMuseTermBean" location="800,372" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="updateMuseRepairBean" location="800,57" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="updateMuseTermBean" location="65,57" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseCustomBean" location="65,302" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseRepairBean" location="555,302" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseStoreBean" location="555,127" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseTermBean" location="310,127" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="deleteSelectMuseTermBean" location="310,232" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_custom_mg.jsp" path="/backstage/musecustommg/list_muse_custom_mg.jsp" location="57,2340" size="150,55" />
+  <webResource name="list_muse_term_mg.jsp" path="/backstage/musetermmg/list_muse_term_mg.jsp" location="72,2165" size="150,55" />
+  <webResource name="list_muse_repair_mg.jsp" path="/backstage/musecustommg/list_muse_repair_mg.jsp" location="60,1990" size="150,55" />
+  <webResource name="add_muse_repair_mg.jsp" path="/backstage/musecustommg/add_muse_repair_mg.jsp" location="57,1815" size="150,55" />
+  <webResource name="update_muse_repair_mg.jsp" path="/backstage/musecustommg/update_muse_repair_mg.jsp" location="13,1640" size="150,55" />
+  <webResource name="add_muse_custom_mg.jsp" path="/backstage/musecustommg/add_muse_custom_mg.jsp" location="53,1465" size="150,55" />
+  <webResource name="add_muse_store_mg.jsp" path="/backstage/musecustommg/add_muse_store_mg.jsp" location="59,1290" size="150,55" />
+  <webResource name="add_muse_term_mg.jsp" path="/backstage/musetermmg/add_muse_term_mg.jsp" location="68,1080" size="150,55" />
+  <webResource name="list_muse_term_mg.jsp" path="/backstage/musecustommg/list_muse_term_mg.jsp" location="64,905" size="150,55" />
+  <webResource name="update_muse_custom_mg.jsp" path="/backstage/musecustommg/update_muse_custom_mg.jsp" location="9,730" size="150,55" />
+  <webResource name="update_muse_store_mg.jsp" path="/backstage/musecustommg/update_muse_store_mg.jsp" location="50,555" size="150,55" />
+  <webResource name="update_muse_term_mg.jsp" path="/backstage/musetermmg/update_muse_term_mg.jsp" location="59,345" size="150,55" />
+</Struts2Diagram>
+

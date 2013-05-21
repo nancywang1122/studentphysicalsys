@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+.add {
+	background-image: url(icons/add.gif) !important;
+}
+
+.delete {
+	background-image: url(icons/delete.gif) !important;
+}
+
+.up {
+	background-image: url(icons/upload.gif) !important;
+}
+
+.trash {
+	background-image: url(icons/trash_16.gif) !important;
+}
+.stop {
+	background-image: url(icons/stop.png) !important;
+}
+.cancel {
+	background-image: url(icons/cancel.gif) !important;
+}

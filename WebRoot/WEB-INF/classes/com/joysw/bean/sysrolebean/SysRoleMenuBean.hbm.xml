@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.joysw.bean.sysrolebean.SysRoleMenuBean" table="sys_role_menu">
+		<composite-id>
+			<key-property name="menuId" column="menu_id" type="java.lang.Integer" />
+			<key-property name="roleId" column="role_id" type="java.lang.Integer" />
+		</composite-id>
+		<property name="isCreate" type="java.lang.Integer">
+			<column name="is_create">
+				<comment>允许create</comment>
+			</column>
+		</property>
+		<property name="isDelete" type="java.lang.Integer">
+			<column name="is_delete">
+				<comment>允许delete</comment>
+			</column>
+		</property>
+		<property name="isModify" type="java.lang.Integer">
+			<column name="is_modify">
+				<comment>允许modify</comment>
+			</column>
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="sysmenumg" location="0,0" size="0,0">
+    <action name="listParentSysMenus" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index_main.jsp" />
+      </result>
+    </action>
+    <action name="loadIndexMain" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index_main.jsp" />
+      </result>
+    </action>
+    <action name="listChildSysMenus" location="0,0" size="0,0" />
+    <action name="listSysMenuModules" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addSysMenuBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateSysMenuBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateSysMenuBeanFlag" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listSysMenuBeans" location="0,0" size="0,0" />
+    <action name="loadSysMenuModules" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_sys_module_mg.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="100,205" size="150,55" />
+  <webResource name="index_main.jsp" path="/index_main.jsp" location="0,0" size="0,0" />
+  <webResource name="list_sys_module_mg.jsp" path="/backstage/sysmoduleinfomg/list_sys_module_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

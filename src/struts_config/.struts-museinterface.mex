@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="museapi" location="10,10" size="670,350">
+    <action name="failResult" location="15,23" size="150,40" />
+    <action name="set_TermHeartBeat" location="260,23" size="150,40" />
+    <action name="get_PlayListId" location="505,23" size="150,40" />
+    <action name="get_PlayListInfo" location="15,163" size="150,40" />
+    <action name="set_OnlineTermPlayListMusicInfo" location="260,163" size="150,40" />
+    <action name="set_OnlineTermPlayMusicInfo" location="505,163" size="150,40" />
+    <action name="set_ProgressTermPlayListMusicInfo" location="15,303" size="150,40" />
+    <action name="set_OnlineTermPlayEndMusicInfo" location="260,303" size="150,40" />
+    <action name="set_StateTermPlayList" location="505,303" size="150,40" />
+  </package>
+</Struts2Diagram>
+

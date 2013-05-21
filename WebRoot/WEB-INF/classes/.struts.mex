@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <include file="struts-login.xml" location="38,955" size="150,30" />
+  <include file="struts-sysmenumg.xml" location="0,0" size="0,0" />
+  <include file="struts-sysrightmg.xml" location="0,0" size="0,0" />
+  <include file="struts-musecustom.xml" location="0,0" size="0,0" />
+  <include file="struts-museplaylistmg.xml" location="0,0" size="0,0" />
+  <include file="struts-musemusicmg.xml" location="0,0" size="0,0" />
+  <include file="struts-museitemmg.xml" location="0,0" size="0,0" />
+  <include file="struts-musereportmg.xml" location="0,0" size="0,0" />
+  <include file="struts-musedbmg.xml" location="0,0" size="0,0" />
+  <include file="struts-sysusermg.xml" location="0,0" size="0,0" />
+  <include file="struts-musetag.xml" location="0,0" size="0,0" />
+  <include file="struts-musecopyright.xml" location="0,0" size="0,0" />
+  <include file="struts-musestore.xml" location="0,0" size="0,0" />
+  <include file="struts-museapi.xml" location="0,0" size="0,0" />
+</Struts2Diagram>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="musedb" location="0,0" size="0,0">
+    <action name="loadMuseDBInfoBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_db_mg.jsp" />
+      </result>
+    </action>
+    <action name="toAddMuseDBInfoBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_db_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMuseDBInfoBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMuseDBInfoBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="backupDB" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="restoreDB" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_report_mg.jsp" path="/backstage/musereportmg/list_muse_report_mg.jsp" location="338,30" size="150,55" />
+  <webResource name="list_muse_db_mg.jsp" path="/backstage/musedbtmg/list_muse_db_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_db_mg.jsp" path="/backstage/musedbtmg/add_muse_db_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

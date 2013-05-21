@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.joysw.bean.studentbean.StudentBean" table="tb_student">
+		<id name="stuId" type="java.lang.Integer">
+			<column name="stu_id" />
+			<generator class="increment" />
+		</id>
+		<property name="stuUserId" type="java.lang.Integer">
+			<column name="stu_user_id"></column>
+		</property>
+		<property name="stuNo" type="java.lang.String">
+			<column name="stu_no"></column>
+		</property>
+		
+		<property name="stuGradeNo" type="java.lang.String">
+			<column name="stu_grade_no"></column>
+		</property>
+		
+		<property name="stuClassNo" type="java.lang.String">
+			<column name="stu_class_no"></column>
+		</property>
+		
+		<property name="stuClass" type="java.lang.String">
+			<column name="stu_class"></column>
+		</property>
+		
+		<property name="stuEthnic" type="java.lang.String">
+			<column name="stu_ethnic"></column>
+		</property>
+		
+		<property name="stuName" type="java.lang.String">
+			<column name="stu_name"></column>
+		</property>
+		
+		<property name="stuSex" type="java.lang.String">
+			<column name="stu_sex"></column>
+		</property>
+		
+		<property name="stuBirthday" type="java.lang.String">
+			<column name="stu_birthday"></column>
+		</property>
+		
+		<property name="stuResource" type="java.lang.String">
+			<column name="stu_resource"></column>
+		</property>
+		
+		<property name="stuCard" type="java.lang.String">
+			<column name="stu_card"></column>
+		</property>
+		
+		<property name="stuHigh" type="java.lang.String">
+			<column name="stu_high"></column>
+		</property>
+		
+		<property name="stuVitalCapacity" type="java.lang.String">
+			<column name="stu_vital_capacity"></column>
+		</property>
+		
+		<property name="stuEnduranceNo" type="java.lang.String">
+			<column name="stu_endurance_no"></column>
+		</property>
+		
+		<property name="stuEnduranceScore" type="java.lang.String">
+			<column name="stu_endurance_score"></column>
+		</property>
+		
+		<property name="stuFlexibleNo" type="java.lang.String">
+			<column name="stu_flexible_no "></column>
+		</property>
+		
+		<property name="stuFlexibleScore" type="java.lang.String">
+			<column name="stu_flexible_score"></column>
+		</property>
+		
+		<property name="stuProgressNo" type="java.lang.String">
+			<column name="stu_progress_no"></column>
+		</property>
+		
+		<property name="stuProgressScore" type="java.lang.String">
+			<column name="stu_progress_score"></column>
+		</property>
+		
+		<property name="stuRewardNo" type="java.lang.String">
+			<column name="stu_reward_no"></column>
+		</property>
+		<property name="stuDepartName" type="java.lang.String">
+			<column name="stu_depart_name"></column>
+		</property>
+		<property name="stuMajor" type="java.lang.String">
+			<column name="stu_major"></column>
+		</property>
+		
+	</class>
+</hibernate-mapping>

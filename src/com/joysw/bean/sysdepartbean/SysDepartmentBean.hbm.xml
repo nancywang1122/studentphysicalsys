@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.joysw.bean.sysdepartbean.SysDepartmentBean"
+		table="sys_department">
+		<id name="departId" type="java.lang.Integer">
+			<column name="depart_id" />
+			<generator class="increment" />
+		</id>
+
+		<property name="departCode" type="java.lang.String">
+			<column name="depart_code" length="1000"></column>
+		</property>
+
+		<property name="departName" type="java.lang.String">
+			<column name="depart_name" length="50">
+				<comment>项的名称:显示在页面上的值</comment>
+			</column>
+		</property>
+		
+		<property name="departParentId" type="java.lang.Integer">
+			<column name="depart_parent_id" length="20">
+				<comment>部门上级id</comment>
+			</column>
+		</property>
+		
+		<property name="departCreatedBy" type="java.lang.Integer">
+			<column name="depart_created_by">
+				<comment>创建人</comment>
+			</column>
+		</property>
+		
+		<property name="departCreatedTime" type="java.sql.Timestamp">
+			<column name="depart_created_time" length="19">
+				<comment>创建时间</comment>
+			</column>
+		</property>
+		
+		<property name="departUpdatedBy" type="java.lang.Integer">
+			<column name="depart_updated_by">
+				<comment>修改人</comment>
+			</column>
+		</property>
+		
+		<property name="departUpdatedTime" type="java.sql.Timestamp">
+			<column name="depart_updated_time" length="19">
+				<comment>修改时间</comment>
+			</column>
+		</property>
+		
+		<property name="departMemo" type="java.lang.String">
+			<column name="depart_memo" length="2000">
+				<comment>备注</comment>
+			</column>
+		</property>
+		
+		<many-to-one name="sysDepartParentBean" column="depart_parent_id"
+			class="com.joysw.bean.sysdepartbean.SysDepartmentBean" insert="false"
+			update="false" lazy="false" not-found="ignore" />
+
+		<set name="sysUserBeans" table="sys_depart_user" inverse="false"
+			lazy="true" fetch="select">
+			<key column="depart_id" not-null="true" />
+			<many-to-many class="com.joysw.bean.sysuserbean.SysUserBean">
+				<column name="user_id" not-null="true" />
+			</many-to-many>
+		</set>
+		
+	</class>
+</hibernate-mapping>

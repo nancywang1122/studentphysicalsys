@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="sysrightmg" location="0,0" size="0,0">
+    <action name="loadSysRoleMenuBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_sys_role_menu_mg.jsp" />
+      </result>
+    </action>
+    <action name="listSysRoleBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listSysMenuBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listSysDepartBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateSysDepartBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="saveSysRoleMenuBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addSysDepartBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteSysDepartBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteSysRoleBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addSysRoleBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateSysRoleBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="index_main.jsp" path="/index_main.jsp" location="9,135" size="150,55" />
+  <webResource name="list_sys_module_mg.jsp" path="/backstage/sysmoduleinfomg/list_sys_module_mg.jsp" location="1229,415" size="150,55" />
+  <webResource name="list_sys_role_menu_mg.jsp" path="/backstage/sysrightinfomg/list_sys_role_menu_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

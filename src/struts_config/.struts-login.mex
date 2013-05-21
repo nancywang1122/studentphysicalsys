@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="login" location="10,165" size="770,1365">
+    <action name="login" location="65,47" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index_main.jsp" />
+      </result>
+    </action>
+    <action name="home" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="home.jsp" />
+      </result>
+    </action>
+    <action name="listCustomContractBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listCopyRightBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listCustomUpdateBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="logout" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="login.jsp" path="/login.jsp" location="345,10" size="150,55" />
+  <webResource name="front_login_one.jsp" path="/front_login_one.jsp" location="816,395" size="150,55" />
+  <webResource name="front_login_two.jsp" path="/front_login_two.jsp" location="571,10" size="150,55" />
+  <webResource name="index.jsp" path="/index.jsp" location="835,605" size="150,55" />
+  <webResource name="register.jsp" path="/register.jsp" location="835,780" size="150,55" />
+  <webResource name="register_one.jsp" path="/register_one.jsp" location="824,955" size="150,55" />
+  <webResource name="register_success.jsp" path="/frontstagevtwo/register_success.jsp" location="837,1130" size="150,55" />
+  <webResource name="register_success.jsp" path="/frontstagevone/register_success.jsp" location="837,1305" size="150,55" />
+  <webResource name="index_main.jsp" path="/index_main.jsp" location="0,0" size="0,0" />
+  <webResource name="home.jsp" path="/home.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

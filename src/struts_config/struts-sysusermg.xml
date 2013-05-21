@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="sysuser" namespace="/sysuser" extends="struts-default,json-default">
+		<interceptors>
+			<interceptor name="sessionIterceptor" class="sessionIterceptor" />
+			<interceptor-stack name="sessionInterceptorStack">
+				<interceptor-ref name="sessionIterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="sessionInterceptorStack" />
+		<global-results>
+			<result name="logout" type="redirect">/index.jsp</result>
+		</global-results>
+
+		<action name="loadSysUserBean" class="sysUserMgAction" method="loadSysUserBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/backstage/sysusermg/list_sys_user_mg.jsp
+			</result>
+		</action>
+		<action name="toAddSysUserBean" class="sysUserMgAction" method="toAddSysUserBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/backstage/sysusermg/add_sys_user_mg.jsp
+			</result>
+		</action>
+		<action name="checkUserName" class="sysUserMgAction" method="checkUserName">
+			<interceptor-ref name="sessionInterceptorStack" />
+		</action>
+		<action name="toUpdateSysUserBean" class="sysUserMgAction"
+			method="toUpdateSysUserBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/backstage/sysusermg/update_sys_user_mg.jsp
+			</result>
+		</action>
+		<action name="addSysUserBean" class="sysUserMgAction" method="addSysUserBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		</action>
+		<action name="updateSysUserBean" class="sysUserMgAction"
+			method="updateSysUserBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		</action>
+		<action name="deleteSysUserBean" class="sysUserMgAction"
+			method="deleteSysUserBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultArray</param>
+			</result>
+		</action>
+		<action name="updateSysUserBeanActive" class="sysUserMgAction"
+			method="updateSysUserBeanActive">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObj</param>
+			</result>
+		</action>
+		<action name="listSysUserBeans" class="sysUserMgAction" method="listSysUserBeans">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObj</param>
+			</result>
+		</action>
+	</package>
+</struts>

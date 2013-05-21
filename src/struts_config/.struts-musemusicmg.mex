@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="musemusic" location="0,0" size="0,0">
+    <action name="loadActiveMuseTempMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_music_tmp_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadManagerMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_music_tmp_manager_mg.jsp" />
+      </result>
+    </action>
+    <action name="playMusicMp3" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="jplayer.mp3.jsp" />
+      </result>
+    </action>
+    <action name="loadMusicMp3" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="jplayer_mp3.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseCustom" location="0,0" size="0,0" />
+    <action name="loadMuseTerm" location="0,0" size="0,0" />
+    <action name="loadMusicTmpMp3" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="jplayer_mp3.jsp" />
+      </result>
+    </action>
+    <action name="loadMusicMyTmpMp3" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="jplayer_mp3.jsp" />
+      </result>
+    </action>
+    <action name="listActiveTempMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listActiveMyTempMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listUnActiveMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMyUploadMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="rebackMuseTempMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteReallyMuseTempMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMuseTempMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteOfficialMuseTempMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteReallyMuseMyUploadMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMuseMusicTempBeans" location="0,0" size="0,0" />
+    <action name="updateMusicOrder" location="0,0" size="0,0" />
+    <action name="updateMuseMusicTempVoiceBeans" location="0,0" size="0,0" />
+    <action name="updateMuseMusicOfficialBeans" location="0,0" size="0,0" />
+    <action name="updateMuseMusicMyBeans" location="0,0" size="0,0" />
+    <action name="toUploadMuseMusics" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="upload_muse_music_mg.jsp" />
+      </result>
+    </action>
+    <action name="toUploadMyMuseMusics" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="upload_muse_music_my_mg.jsp" />
+      </result>
+    </action>
+    <action name="uploadFiles" location="0,0" size="0,0" />
+    <action name="uploadMyFiles" location="0,0" size="0,0" />
+    <action name="uploadMuseMusics" location="0,0" size="0,0" />
+    <action name="uploadMyMuseMusics" location="0,0" size="0,0" />
+    <action name="loadMuseMusicTags" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_music_tmp_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadOfficialMuseMusicTags" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_music_official_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMyMuseMusicTags" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_music_my_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMyUploadMuseMusicTags" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_music_myupload_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadOfficialMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_music_official_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMyMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_music_my_mg.jsp" />
+      </result>
+    </action>
+    <action name="listOfficialMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMyMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseTermBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="loadUnBindMuseTermBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_term_mg.jsp" />
+      </result>
+    </action>
+    <action name="listUnBindMuseTermBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listUnBindMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="loadUnBindMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_muse_mg.jsp" />
+      </result>
+    </action>
+    <action name="deleteBindMuseMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteBindMuseTerm" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addUnBindMuseMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addUnBindMuseTerm" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_play_list_mg.jsp" path="/backstage/museplaylistmg/list_muse_play_list_mg.jsp" location="13,30" size="150,55" />
+  <webResource name="add_muse_play_list_mg.jsp" path="/backstage/museplaylistmg/add_muse_play_list_mg.jsp" location="10,205" size="150,55" />
+  <webResource name="update_muse_play_list_mg.jsp" path="/backstage/museplaylistmg/update_muse_play_list_mg.jsp" location="841,660" size="150,55" />
+  <webResource name="list_muse_muse_mg.jsp" path="/backstage/museplaylistmg/list_muse_muse_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_term_mg.jsp" path="/backstage/museplaylistmg/list_muse_term_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_music_mg.jsp" path="/backstage/musemusicmg/list_muse_music_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="upload_muse_music_mg.jsp" path="/backstage/musemusicmg/upload_muse_music_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_music_finished_mg.jsp" path="/backstage/musemusicmg/list_muse_music_finished_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_music_my_mg.jsp" path="/backstage/musemusicmg/list_muse_music_my_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_music_tmp_mg.jsp" path="/backstage/musemusicmg/list_muse_music_tmp_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_music_tmp_mg.jsp" path="/backstage/musemusicmg/update_muse_music_tmp_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_music_official_mg.jsp" path="/backstage/musemusicmg/update_muse_music_official_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_music_official_mg.jsp" path="/backstage/musemusicmg/list_muse_music_official_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="upload_muse_music_my_mg.jsp" path="/backstage/musemusicmg/upload_muse_music_my_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_music_my_mg.jsp" path="/backstage/musemusicmg/update_muse_music_my_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_music_myupload_mg.jsp" path="/backstage/musemusicmg/update_muse_music_myupload_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="jplayer.mp3.jsp" path="/jplayer/jplayer.mp3.jsp" location="0,0" size="0,0" />
+  <webResource name="jplayer_mp3.jsp" path="/jplayer/jplayer_mp3.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_music_tmp_manager_mg.jsp" path="/backstage/musemusicmg/list_muse_music_tmp_manager_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="frontmenumg" namespace="/frontmenumg"
+		extends="struts-default,json-default">
+		<action name="loadFrontMenuList" class="sysMenuMgAction"
+			method="loadFrontMenuList">
+		</action>
+		<action name="loadFrontChildMenuList" class="sysMenuMgAction"
+			method="loadFrontChildMenuList">
+		</action>
+		<action name="loadFrontParentMenuList" class="sysMenuMgAction"
+			method="loadFrontParentMenuList">
+		</action>
+	</package>
+</struts>

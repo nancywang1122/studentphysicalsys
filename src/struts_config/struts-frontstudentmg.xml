@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="frontstudentmg" namespace="/"
+		extends="struts-default,json-default">
+		<interceptors>
+			<interceptor name="sessionIterceptor" class="sessionIterceptor" />
+			<interceptor-stack name="sessionInterceptorStack">
+				<interceptor-ref name="sessionIterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="sessionInterceptorStack" />
+
+		<global-results>
+			<result name="logout" type="redirect">/frontstage/login.jsp</result>
+		</global-results>
+		<action name="getStudentBeanById" class="studentMgAction"
+			method="getStudentBeanById">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/frontstage/studentmg/student_info.jsp</result>
+			<result name="input">/frontstage/studentmg/student_info.jsp</result>
+		</action>
+		<action name="checklogin" class="loginAction" method="admin">
+			<result name="success">/frontstage/login.jsp</result>
+		</action>
+		<action name="orderVenue" class="studentMgAction" method="load">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/frontstage/studentmg/order_venue.jsp</result>
+		</action>
+	</package>
+</struts>

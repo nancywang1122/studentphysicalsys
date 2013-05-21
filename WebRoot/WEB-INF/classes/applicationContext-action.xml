@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="loginInterceptor" class="com.joysw.action.interceptor.LoginInterceptor"></bean>
+
+	<bean id="sessionIterceptor" class="com.joysw.action.interceptor.SessionIterceptor"></bean>
+	
+	<bean id="loginAction" class="com.joysw.action.login.LoginAction"
+		scope="prototype">
+		<property name="loginServiceImpl" ref="loginServiceImpl" />
+		<property name="sysRoleMenuMgServiceImpl" ref="sysRoleMenuMgServiceImpl" />
+	</bean>
+	<bean id="sysMenuMgAction" class="com.joysw.action.sysmenumg.SysMenuMgAction"
+		scope="prototype">
+		<property name="baseServiceImpl" ref="baseServiceImpl" />
+		<property name="sysMenuMgServiceImpl" ref="sysMenuMgServiceImpl" />
+	</bean>
+	<bean id="sysRoleMenuMgAction" class="com.joysw.action.sysrolemenumg.SysRoleMenuMgAction"
+		scope="prototype">
+		<property name="baseSysRoleServiceImpl" ref="baseServiceImpl" />
+		<property name="baseSysRoleMenuMgServiceImpl" ref="baseServiceImpl" />
+		<property name="baseSysDepartMgServiceImpl" ref="baseServiceImpl" />
+		<property name="sysMenuMgServiceImpl" ref="sysMenuMgServiceImpl" />
+		<property name="sysRoleMenuMgServiceImpl" ref="sysRoleMenuMgServiceImpl" />
+	</bean>
+	
+	<bean id="sysUserMgAction" class="com.joysw.action.sysusermg.SysUserMgAction"
+		scope="prototype">
+		<property name="sysUserServiceImpl" ref="sysUserServiceImpl" />
+		<property name="baseServiceSysUserImpl" ref="baseServiceImpl" />
+		<property name="baseServiceSysDepartUserImpl" ref="baseServiceImpl" />
+		<property name="baseServiceSysRoleUserImpl" ref="baseServiceImpl" />
+		<property name="baseServiceSysDepartImpl" ref="baseServiceImpl" />
+	</bean>
+	<!-- 学生信息 -->
+	<bean id="studentMgAction" class="com.joysw.action.studentmg.StudentMgAction"
+		scope="prototype">
+		<property name="studentMgServceImpl" ref="studentMgServceImpl" />
+	</bean>
+	<!-- 运动咨询信息 -->
+	<bean id="sportsConsultAction" class="com.joysw.action.sportsconsultmg.SportsConsultAction"
+		scope="prototype">
+		<property name="sportsConsultServiceImpl" ref="sportsConsultServiceImpl" />
+	</bean>
+</beans>

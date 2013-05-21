@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.custom.i18n.resources" value="messageresource" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 是否缓存浏览器静太页面,开发阶段关闭掉 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 默认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 模块管理 -->
+	<include file="struts_config/struts-login.xml" />
+	<include file="struts_config/struts-sysmenumg.xml" />
+	<!-- 前台菜单-->
+	<include file="struts_config/struts-frontmenumg.xml" />
+	<include file="struts_config/struts-sysrightmg.xml" />
+	<include file="struts_config/struts-frontstudentmg.xml" />
+	<include file="struts_config/struts-sysusermg.xml" />
+	
+	<!--前台菜单之 运动咨询菜单 -->
+		<include file="struts_config/struts-sportsconsultmg.xml" />
+</struts>

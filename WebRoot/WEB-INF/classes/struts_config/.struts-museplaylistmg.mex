@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="museplaylist" location="0,0" size="0,0">
+    <action name="loadMusePlayList" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_play_list_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMusePlayListMake" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_list_make_mg.jsp.jsp" />
+      </result>
+    </action>
+    <action name="toAddMusePlayListBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_play_list_mg.jsp" />
+      </result>
+    </action>
+    <action name="toUpdateMusePlayListBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_play_list_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMusePlayTaskLogListBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_play_task_log_list_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseMusicBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_muse_mg.jsp" />
+      </result>
+    </action>
+    <action name="loadMuseReleasePlayListBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_playlist_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMusePlayListBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMusePlayTaskLogListBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseReleasePlayListBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="getWeeks" location="0,0" size="0,0" />
+    <action name="getMonths" location="0,0" size="0,0" />
+    <action name="addMusePlayListBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="downloadExcel" location="0,0" size="0,0" />
+    <action name="downloadMusic" location="0,0" size="0,0" />
+    <action name="releasePlayList" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="makeMusePlayListBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMakeMusePlayListBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMusePlayListBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMusePlayListBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMusePlayListBeanAndMusic" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="cancelMusePlayListBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_custom_mg.jsp" path="/backstage/musecustommg/list_muse_custom_mg.jsp" location="57,1255" size="150,55" />
+  <webResource name="add_muse_custom_mg.jsp" path="/backstage/musecustommg/add_muse_custom_mg.jsp" location="53,1080" size="150,55" />
+  <webResource name="add_muse_store_mg.jsp" path="/backstage/musecustommg/add_muse_store_mg.jsp" location="59,905" size="150,55" />
+  <webResource name="add_muse_term_mg.jsp" path="/backstage/musecustommg/add_muse_term_mg.jsp" location="61,730" size="150,55" />
+  <webResource name="update_muse_custom_mg.jsp" path="/backstage/musecustommg/update_muse_custom_mg.jsp" location="9,555" size="150,55" />
+  <webResource name="update_muse_store_mg.jsp" path="/backstage/musecustommg/update_muse_store_mg.jsp" location="50,380" size="150,55" />
+  <webResource name="update_muse_term_mg.jsp" path="/backstage/musecustommg/update_muse_term_mg.jsp" location="52,205" size="150,55" />
+  <webResource name="list_muse_play_list_mg.jsp" path="/backstage/museplaylistmg/list_muse_play_list_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_play_list_mg.jsp" path="/backstage/museplaylistmg/add_muse_play_list_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_play_list_mg.jsp" path="/backstage/museplaylistmg/update_muse_play_list_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_list_make_mg.jsp.jsp" path="/backstage/muselistmakemg/list_muse_list_make_mg.jsp.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_muse_mg.jsp" path="/backstage/muselistmakemg/list_muse_muse_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_playlist_mg.jsp" path="/backstage/musereleasemg/list_muse_playlist_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="list_muse_play_task_log_list_mg.jsp" path="/backstage/museplaylistmg/list_muse_play_task_log_list_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

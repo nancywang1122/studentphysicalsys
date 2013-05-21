@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="sysuser" location="0,0" size="0,0">
+    <action name="loadSysUserBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_sys_user_mg.jsp" />
+      </result>
+    </action>
+    <action name="toAddSysUserBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_sys_user_mg.jsp" />
+      </result>
+    </action>
+    <action name="checkUserName" location="0,0" size="0,0" />
+    <action name="toUpdateSysUserBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_sys_user_mg.jsp" />
+      </result>
+    </action>
+    <action name="addSysUserBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateSysUserBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateSysUserBeanActive" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listSysUserBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_sys_role_menu_mg.jsp" path="/backstage/sysrightinfomg/list_sys_role_menu_mg.jsp" location="1558,30" size="150,55" />
+  <webResource name="list_sys_user_mg.jsp" path="/backstage/sysusermg/list_sys_user_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_sys_user_mg.jsp" path="/backstage/sysusermg/add_sys_user_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_sys_user_mg.jsp" path="/backstage/sysusermg/update_sys_user_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

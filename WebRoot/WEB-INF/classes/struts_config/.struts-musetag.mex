@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="musetag" location="0,0" size="0,0">
+    <action name="loadMuseTagBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_tag_mg.jsp" />
+      </result>
+    </action>
+    <action name="toAddMuseTagBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="add_muse_tag_mg.jsp" />
+      </result>
+    </action>
+    <action name="toUpdateMuseTagBean" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="update_muse_tag_mg.jsp" />
+      </result>
+    </action>
+    <action name="addMuseTagBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateMuseTagBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="listMuseTagBean" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_report_mg.jsp" path="/backstage/musereportmg/list_muse_report_mg.jsp" location="338,30" size="150,55" />
+  <webResource name="list_muse_tag_mg.jsp" path="/backstage/musetagmg/list_muse_tag_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="add_muse_tag_mg.jsp" path="/backstage/musetagmg/add_muse_tag_mg.jsp" location="0,0" size="0,0" />
+  <webResource name="update_muse_tag_mg.jsp" path="/backstage/musetagmg/update_muse_tag_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

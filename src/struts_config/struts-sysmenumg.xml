@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="sysmenumg" namespace="/sysmenumg"
+		extends="struts-default,json-default">
+		<interceptors>
+			<interceptor name="sessionIterceptor" class="sessionIterceptor" />
+			<interceptor-stack name="sessionInterceptorStack">
+				<interceptor-ref name="sessionIterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="sessionInterceptorStack" />
+		<global-results>
+			<result name="logout" type="redirect">/index.jsp</result>
+		</global-results>
+
+		<action name="listParentSysMenus" class="sysMenuMgAction"
+			method="listParentSysMenus">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/index_main.jsp</result>
+		</action>
+		<action name="loadIndexMain" class="sysMenuMgAction" method="listParentSysMenus">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/index_main.jsp</result>
+		</action>
+		<action name="listChildSysMenus" class="sysMenuMgAction"
+			method="listChildSysMenus">
+			<interceptor-ref name="sessionInterceptorStack" />
+		</action>
+		<action name="listSysMenuModules" class="sysMenuMgAction"
+			method="listSysMenuModules">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObj</param>
+			</result>
+		</action>
+		<action name="addSysMenuBean" class="sysMenuMgAction" method="addSysMenuBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObj</param>
+			</result>
+		</action>
+		<action name="updateSysMenuBean" class="sysMenuMgAction"
+			method="updateSysMenuBean">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObj</param>
+			</result>
+		</action>
+		<action name="updateSysMenuBeanFlag" class="sysMenuMgAction"
+			method="updateSysMenuBeanFlag">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result type="json">
+				<param name="root">resultObj</param>
+			</result>
+		</action>
+		
+		<action name="listSysMenuBeans" class="sysMenuMgAction" method="listSysMenuBeans">
+			<interceptor-ref name="sessionInterceptorStack" />
+		</action>
+		<action name="loadSysMenuModules" class="sysMenuMgAction"
+			method="loadSysMenuModules">
+			<interceptor-ref name="sessionInterceptorStack" />
+			<result name="success">/backstage/sysmoduleinfomg/list_sys_module_mg.jsp
+			</result>
+		</action>
+	</package>
+</struts>

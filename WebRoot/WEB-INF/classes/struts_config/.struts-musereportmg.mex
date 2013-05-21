@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="musereport" location="0,0" size="0,0">
+    <action name="loadMuseReportBeans" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list_muse_report_mg.jsp" />
+      </result>
+    </action>
+    <action name="listMuseReportBeans" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list_muse_item_mg.jsp" path="/backstage/museitemmg/list_muse_item_mg.jsp" location="21,30" size="150,55" />
+  <webResource name="search_muse_item_mg.jsp" path="/backstage/museitemmg/search_muse_item_mg.jsp" location="10,205" size="150,55" />
+  <webResource name="jplayer_mp3.jsp" path="/jplayer/jplayer_mp3.jsp" location="1174,660" size="150,55" />
+  <webResource name="list_muse_report_mg.jsp" path="/backstage/musereportmg/list_muse_report_mg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

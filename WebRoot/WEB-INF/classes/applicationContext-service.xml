@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="baseServiceImpl" class="com.joysw.service.base.impl.BaseServiceImpl">
+		<property name="baseDAOImpl" ref="baseDAOImpl" />
+	</bean>
+	
+	<bean id="loginServiceImpl" class="com.joysw.service.login.impl.LoginServiceImpl">
+		<property name="loginDAOImpl" ref="loginDAOImpl" />
+	</bean>
+	<bean id="sysMenuMgServiceImpl" class="com.joysw.service.sysmenumg.impl.SysMenuMgServiceImpl">
+		<property name="sysMenuMgDAOImpl" ref="sysMenuMgDAOImpl" />
+	</bean>
+	<bean id="sysRoleMenuMgServiceImpl"
+		class="com.joysw.service.sysrolemenumg.impl.SysRoleMenuMgServiceImpl">
+		<property name="baseSysRoleMgDAOImpl" ref="baseDAOImpl" />
+		<property name="baseSysRoleMenuMgDAOImpl" ref="baseDAOImpl" />
+		<property name="baseSysDepartMgDAOImpl" ref="baseDAOImpl" />
+	</bean>
+	
+	<bean id="sysUserServiceImpl" class="com.joysw.service.sysusermg.impl.SysUserServiceImpl">
+		<property name="baseSysUserDAOImpl" ref="baseDAOImpl" />
+		<property name="baseSysDepartUserDAOImpl" ref="baseDAOImpl" />
+		<property name="baseSysRoleUserDAOImpl" ref="baseDAOImpl" />
+		<property name="baseSyDepartDAOImpl" ref="baseDAOImpl" />
+		<property name="baseSysRoleDAOImpl" ref="baseDAOImpl" />
+	</bean>
+	<!-- 学生信息 -->
+	<bean id="studentMgServceImpl" class="com.joysw.service.studentmg.impl.StudentMgServceImpl">
+		<property name="baseStudentDAOImpl" ref="baseDAOImpl" />
+	</bean>
+	<!-- 运动咨询信息 -->
+	<bean id="sportsConsultServiceImpl" class="com.joysw.service.sportsconsultmg.impl.SportsConsultServiceImpl">
+	<property name="baseSportsConsultDAOImpl" ref="baseDAOImpl" />
+	</bean>
+</beans>
